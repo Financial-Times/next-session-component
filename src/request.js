@@ -3,14 +3,13 @@
 var sessionServiceEndpoint = 'https://session-next.ft.com';
 var jsonpTimeout = 2000;
 
-window.FT = window.FT || {};
-
-var jsonpCallbacks = [];
+var callbacks = {};
+var callbackNames = [];
 
 function generateCallbackName(){
 	var base = 'sessionServiceJsonpCallback';
-	var callbackName = base + '_' + (jsonpCallbacks.length+1);
-	jsonpCallbacks.push(callbackName);
+	var callbackName = base + '_' + (callbackNames.length+1);
+	callbackNames.push(callbackName);
 	return callbackName;
 }
 
@@ -22,7 +21,7 @@ function jsonpRequest(url){
 	return new Promise(function(resolve, reject){
 		var callbackName = generateCallbackName();
 		var timeout;
-		window.FT[callbackName] = function(response){
+		callbacks[callbackName] = function(response){
 
 			try {
 				response = JSON.parse(response);
