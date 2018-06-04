@@ -7,7 +7,7 @@ A client for working with the [Next Session service](https://github.com/Financia
 
 ## Installing
 
-	bower i -S next-session-client
+	npm i -S next-session-client
 
 
 ## Usage
