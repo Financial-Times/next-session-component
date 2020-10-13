@@ -8,8 +8,7 @@
     "Makefile",
     "circle.yml",
     "ft.yml",
-    "n.makefile",
-    "package.json"
+    "n.makefile"
   ],
   "homepage": "https://github.com/Financial-Times/next-session-client"
 }
