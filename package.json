@@ -1,6 +1,7 @@
 {
   "name": "next-session-client",
   "version": "0.0.0",
+  "main": "main.js",
   "devDependencies": {
     "@financial-times/n-gage": "^5.0.0",
     "babel-core": "^6.24.0",
