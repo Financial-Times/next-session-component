@@ -1,6 +1,6 @@
 {
   "name": "next-session-client",
-  "version": "3.0.0",
+  "version": "0.0.0",
   "main": "main.js",
   "devDependencies": {
     "@financial-times/n-gage": "^5.0.0",
