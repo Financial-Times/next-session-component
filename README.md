@@ -1,5 +1,5 @@
 # Next Session Client
-[![Build Status](https://snap-ci.com/Financial-Times/next-session-client/branch/HEAD/build_image)](https://snap-ci.com/Financial-Times/next-session-client/branch/master)
+[![CircleCI](https://circleci.com/gh/Financial-Times/next-session-client/tree/main.svg?style=svg)](https://circleci.com/gh/Financial-Times/next-session-client/tree/main)
 
 A client for working with the [Next Session service](https://github.com/Financial-Times/next-session).
 
