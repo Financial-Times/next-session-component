@@ -22,7 +22,7 @@
     "webpack": "^2.2.1"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "scripts": {
     "prepare": "npx snyk protect || npx snyk protect -d || true"
