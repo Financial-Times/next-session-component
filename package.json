@@ -9,6 +9,7 @@
     "babel-preset-es2015": "^6.24.0",
     "bower": "^1.8.8",
     "chai": "^3.0.0",
+    "check-engines": "^1.5.0",
     "karma": "^1.5.0",
     "karma-chai": "^0.1.0",
     "karma-cli": "^1.0.1",
@@ -22,10 +23,12 @@
     "webpack": "^2.2.1"
   },
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "7.x"
   },
   "scripts": {
-    "prepare": "npx snyk protect || npx snyk protect -d || true"
+    "prepare": "npx snyk protect || npx snyk protect -d || true",
+    "preinstall": "npm_config_yes=true npx check-engine"
   },
   "husky": {
     "hooks": {
@@ -33,5 +36,9 @@
       "pre-commit": "node_modules/.bin/secret-squirrel",
       "pre-push": "make test && make verify -j3"
     }
+  },
+  "volta": {
+    "node": "12.22.5",
+    "npm": "7.20.2"
   }
 }
