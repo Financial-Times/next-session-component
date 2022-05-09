@@ -2,5 +2,4 @@
 .eslintrc.js
 
 /.idea/
-/bower_components/
 /node_modules/
