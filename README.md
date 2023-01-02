@@ -27,3 +27,4 @@ A client for working with the [Next Session service](https://github.com/Financia
 
 	// get (secure) session id
 	const sessionId = session.sessionId();
+test
