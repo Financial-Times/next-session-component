@@ -1,5 +1,5 @@
 .editorconfig
-.eslintrc.js
 
 /.idea/
 /node_modules/
+/.toolkitstate
