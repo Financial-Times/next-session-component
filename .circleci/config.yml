@@ -3,6 +3,7 @@
 version: 2.1
 orbs:
   tool-kit: financial-times/dotcom-tool-kit@5
+  browser-tools: circleci/browser-tools@1.2.3
 executors:
   node:
     docker:
