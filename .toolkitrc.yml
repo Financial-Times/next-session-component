@@ -8,4 +8,7 @@ hooks:
   test:ci:
     - Karma
 
-options: {}
+options:
+  "@dotcom-tool-kit/circleci":
+    nodeVersion:
+      - '18.16-browsers'
