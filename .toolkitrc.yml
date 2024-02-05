@@ -1,6 +1,9 @@
 plugins:
   - "@dotcom-tool-kit/component"
+  - "./toolkit/karma"
   
-hooks: {}
+hooks:
+  test:local:
+    - KarmaLocal
 
 options: {}
