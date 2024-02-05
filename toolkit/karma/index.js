@@ -1,22 +1,17 @@
-const { config, Server } = require('karma');
 const { Task } = require('@dotcom-tool-kit/types');
-const { ToolKitError } = require('@dotcom-tool-kit/error');
 const { spawn } = require('child_process');
 const { hookFork, waitOnExit } = require('@dotcom-tool-kit/logger');
+const karmaCLIPath = require.resolve('karma/bin/karma')
 
-class KarmaLocal extends Task {
+class Karma extends Task {
     async run() {
 			const args = ['start', 'test/karma.conf.js']
-
 			this.logger.info(`running karma ${args.join(' ')}`)
-
-			const child = spawn('karma', args)
-
-			hookFork(this.logger, 'mocha', child)
-
-			return waitOnExit('mocha', child)
+			const child = spawn(karmaCLIPath, args)
+			hookFork(this.logger, 'karma', child)
+			return waitOnExit('karma', child)
     }
 }
 
-exports.tasks = [ KarmaLocal ];
+exports.tasks = [ Karma ];
 

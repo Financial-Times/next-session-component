@@ -4,6 +4,8 @@ plugins:
   
 hooks:
   test:local:
-    - KarmaLocal
+    - Karma
+  test:ci:
+    - Karma
 
 options: {}
