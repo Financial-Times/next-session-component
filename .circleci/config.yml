@@ -109,6 +109,8 @@ workflows:
                 - node
       - tool-kit/test:
           name: tool-kit/test-<< matrix.executor >>
+          pre-steps:
+            - browser-tools/install-firefox
           requires:
             - tool-kit/build-<< matrix.executor >>
           matrix:
