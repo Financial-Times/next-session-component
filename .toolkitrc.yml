@@ -4,9 +4,9 @@ plugins:
   
 hooks:
   test:local:
-    - Karma
+    - KarmaLocal
   test:ci:
-    - Karma
+    - KarmaCI
 
 options:
   "@dotcom-tool-kit/circleci":
