@@ -9,7 +9,7 @@
     "babel-preset-es2015": "^6.24.0",
     "chai": "^3.0.0",
     "check-engines": "^1.5.0",
-    "dotcom-tool-kit": "^3.4.2",
+    "dotcom-tool-kit": "^3.5.2",
     "karma": "^6.4.2",
     "karma-chai": "^0.1.0",
     "karma-cli": "^1.0.1",
