@@ -19,7 +19,7 @@
     "karma-webpack": "^2.0.3",
     "mocha": "^6.2.3",
     "sinon": "^1.14.1",
-    "webpack": "^2.2.1"
+    "webpack": "^5.95.0"
   },
   "engines": {
     "node": "16.x || 18.x",
